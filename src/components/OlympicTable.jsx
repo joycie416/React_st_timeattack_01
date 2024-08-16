@@ -65,7 +65,10 @@ const OlympicTable = () => {
     document.getElementById('silver').value = 0
     document.getElementById('bronze').value = 0
 
-    setName('')
+    setName('');
+    setGold(0);
+    setSilver(0);
+    setBronze(0);
   }
 
   console.log('total :', total);
@@ -103,7 +106,7 @@ const sortTotal = (total) => {
       if (data1.silver !== data2.silver) {
         return data2.silver - data1.silver
       } else {
-        return data2.bronze - data2.bronze
+        return data2.bronze - data1.bronze
       }
     }
   })
